@@ -1,0 +1,13 @@
+/* .active{
+    font-size: large;
+    font-weight: 700;
+    color: rgb(1, 166, 26);
+    transition: all  .2s;
+} */
+.active:hover{
+    color: rgb(1, 166, 26);
+}
+.product a:focus,
+.product button:focus {
+    outline: none;
+}
