@@ -63,7 +63,7 @@ function App() {
     <CartContextProvider>  
       <QueryClientProvider client={query}>
     <UserContextProvider>
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router} basename="/Freshcart"></RouterProvider>
       <Toaster />
       <ReactQueryDevtools initialIsOpen={false} />
     </UserContextProvider>
