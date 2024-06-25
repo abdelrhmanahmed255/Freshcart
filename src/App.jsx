@@ -34,7 +34,7 @@ const query = new QueryClient();
 
 const router = createBrowserRouter([
   {
-    path: '',
+    path: '/',
     element: <Layout />,
     children: [
       { index: true, element: <ProtectedRoute> <Home /> </ProtectedRoute> },
