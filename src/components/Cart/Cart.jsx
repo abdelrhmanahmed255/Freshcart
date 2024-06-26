@@ -166,7 +166,7 @@ export default function Cart() {
   ) : (
             <div className='text-center p-20 pt-16'>
               <h1 className='text-xl font-semibold mb-8 text-gray-500'>There are no items yet.</h1>
-              <Link to={"/products"} className='bg-green-500 text-white px-8 py-4 rounded-xl text-lg hover:text-white hover:bg-green-600'>Add your first product to cart</Link>
+              <Link to={"/products"} className='bg-green-500 text-white  px-8 py-4 rounded-xl text-lg hover:text-white hover:bg-green-600'>Add your first product to cart</Link>
             </div>
           )}
         </div>
