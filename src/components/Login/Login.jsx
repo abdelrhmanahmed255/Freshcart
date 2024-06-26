@@ -22,7 +22,7 @@ export default function Login() {
         setUserLogin(response.data.token);
         setUserName(response.data.user.name);
         formik.resetForm();
-        navigate('/'); 
+        navigate('/Freshcart'); 
       })
       .catch((error) => {
         setIsLoading(false);
