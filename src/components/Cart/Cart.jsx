@@ -164,7 +164,7 @@ export default function Cart() {
     <button onClick={clearCartItems} className='bg-red-600 px-6 py-4 rounded-md text-white block ms-auto  mt-6 hover:bg-red-800'>Clear Cart</button>
    </> 
   ) : (
-            <div className='text-center p-20 pt-16'>
+            <div className='text-center md:p-20 pt-16'>
               <h1 className='text-xl font-semibold mb-8 text-gray-500'>There are no items yet.</h1>
               <Link to={"/products"} className='bg-green-500 text-white  px-8 py-4 rounded-xl text-lg hover:text-white hover:bg-green-600'>Add your first product to cart</Link>
             </div>

@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <nav className={`bg-gray-100 fixed top-0 left-0 right-0 z-50 ${scrolled ? 'py-0' : 'py-2'} px-4 transition-all duration-500`}>
       <div className={`container w-full flex relative  ${open ? 'justify-around ' : 'justify-between py-4'}  items-center mx-auto `}>
-        <Link to="/Freshcart" className={`lg:hidden ${open ? 'hidden' : ''} `}>
+        <Link to="/" className={`lg:hidden ${open ? 'hidden' : ''} `}>
           <img src={logo} width={120} alt="fresh cart logo" />
         </Link>
         <button onClick={toggleMenu} type="button" className={`${open ? 'absolute top-5 right-0' : ''} inline-flex p-2 order-3  text-gray-900 rounded-lg lg:hidden`} aria-controls="navbar-default" aria-expanded={open}>
@@ -64,14 +64,14 @@ export default function Navbar() {
         </button>
         <div className={` lg:flex  lg:items-center lg:w-full ${open ? 'block w-full' : 'hidden'}`}>
           <div className={` gap-x-[110px] flex ${open ? '' : 'justify-between'} ${userLogin !== null ? " w-full" :'w-full justify-between me-3'}  lg:flex-row lg:items-center lg:space-x-8  mt-0 lg:text-sm lg:font-medium`}>
-            <Link to="/Freshcart" className="hidden lg:block">
+            <Link to="/" className="hidden lg:block">
               <img src={logo} width={120} alt="fresh cart logo" />
             </Link>
             <ul className={`${open ? 'border-e border-solid border-black w-1/4 ' : ''}  flex  flex-col lg:flex-row lg:space-x-8 lg:mr-auto mt-4 lg:mt-0`}>
               {userLogin !== null ? (
                 <>
                   <li>
-                    <NavLink to="/Freshcart" className={({ isActive }) =>
+                    <NavLink to="/" className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 text-[16px] rounded lg:bg-transparent lg:p-0 ${isActive ? 'font-semibold text-green-500 hover:text-green-500' : 'text-gray-700'}`
                     } onClick={() => setOpen(false)}>
                       Home

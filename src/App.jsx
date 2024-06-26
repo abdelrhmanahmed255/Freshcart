@@ -35,7 +35,7 @@ const router = createHashRouter([
     path: '/',
     element: <Layout />,
     children: [
-      { path: "", index: true, element: <ProtectedRoute> <Home /> </ProtectedRoute> },
+      { path: "/", index: true, element: <ProtectedRoute> <Home /> </ProtectedRoute> },
       { path: 'products', element: <ProtectedRoute> <Products /> </ProtectedRoute> },
       { path: 'cart', element: <ProtectedRoute> <Cart /> </ProtectedRoute> },
       { path: 'brands', element: <ProtectedRoute> <Brands /> </ProtectedRoute> },
@@ -60,7 +60,7 @@ function App() {
     <CartContextProvider>  
       <QueryClientProvider client={query}>
         <UserContextProvider>
-          <RouterProvider router={router} basename="/Freshcart" />
+          <RouterProvider router={router}  />
           <Toaster />
           <ReactQueryDevtools initialIsOpen={false} />
         </UserContextProvider>

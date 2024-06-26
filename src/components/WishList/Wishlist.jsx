@@ -107,9 +107,9 @@ export default function Wishlist() {
               ))}
             </>
             {!wishlistLoad && wishlistItems.length === 0 && (
-                   <div className='text-center p-20 pt-16'>
+                   <div className='text-center  md:p-20 pt-16'>
                 <h1 className='text-xl font-semibold mb-8 text-gray-500'>Your wishlist is empty.</h1>
-                <Link to={"/products"} className='bg-green-500 text-white px-8 py-4 rounded-xl text-lg hover:text-white hover:bg-green-600'>Start adding products to your wishlist</Link>
+                <Link to={"/products"} className='bg-green-500 text-white  px-8 py-4 rounded-xl text-lg hover:text-white hover:bg-green-600'>Start adding products to your wishlist</Link>
               </div>
              )}
          
